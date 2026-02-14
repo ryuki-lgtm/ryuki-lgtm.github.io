@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>HTMLとは？初心者向け完全ガイド｜Web初心者のための基礎解説</title>
+  <meta name="description" content="HTMLの基本概念、よく使う要素、実際のサンプルと作り方を初心者向けに丁寧に解説します。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>HTMLとは？初心者向け完全ガイド</h1>
+  <nav>
+    <a href="index.html">ホーム</a> |
+    <a href="css_intro.html">CSSの基本</a> |
+    <a href="js_start.html">JavaScriptの始め方</a> |
+    <a href="github_pages.html">GitHub Pagesで公開</a> |
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+</header>
+
+<main>
+  <h2>HTMLの役割 — Webページの「骨組み」</h2>
+  <p>
+    HTML（HyperText Markup Language）は、Webページの構造を定義する言語です。文章を見出し・段落・リスト・リンク・画像などに分け、ブラウザに「どう表示するか」を伝えます。デザイン（色や配置）は主にCSS、動きを付けるのはJavaScriptが担いますが、すべての基礎はHTMLです。
+  </p>
+
+  <h2>よく使う要素とその意味</h2>
+  <ul>
+    <li><strong>&lt;h1&gt;〜&lt;h6&gt;</strong> — 見出し（重要度により数字が小さいほど上位）</li>
+    <li><strong>&lt;p&gt;</strong> — 段落（本文）</li>
+    <li><strong>&lt;a href="…" &gt;</strong> — リンク</li>
+    <li><strong>&lt;img src="…" alt="…" &gt;</strong> — 画像（altは必ず）</li>
+    <li><strong>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt;</strong> — リスト（順不同／有序）</li>
+    <li><strong>&lt;header&gt; / &lt;main&gt; / &lt;footer&gt;</strong> — ページ構造を明確にするセクショナル要素</li>
+  </ul>
+
+  <h2>簡単なHTMLの例（実際に動くサンプル）</h2>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;サンプルページ&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;こんにちは、HTML！&lt;/h1&gt;
+  &lt;p&gt;これはサンプルの段落です。&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h2>アクセシビリティとSEOの基本ポイント</h2>
+  <p>
+    - <strong>alt属性</strong>：画像に必ず意味のある代替テキストを入れる。<br>
+    - <strong>見出しの順序</strong>：h1→h2→h3のように論理的に使う。<br>
+    - <strong>メタデータ</strong>：titleとmeta descriptionは検索結果に直結するので適切に設定する。
+  </p>
+
+  <h2>よくあるつまずきと対処法</h2>
+  <p>
+    - 表示が崩れる：CSSのクラス名やセレクタが正しいか、パス（リンクや画像）が合っているか確認。<br>
+    - 文字化け：meta charsetがutf-8になっているかをチェック。<br>
+    - リンク切れ：相対パス/絶対パスの違いを理解する。
+  </p>
+
+  <h2>まとめ（最初に覚えるべきこと）</h2>
+  <ol>
+    <li>DOCTYPEとhtml langを設定する</li>
+    <li>titleとmeta descriptionを入れる</li>
+    <li>見出しと段落で文章を整理する</li>
+  </ol>
+
+  <!-- 広告を入れる場合はここに AdSense コードを貼ってください（審査通過後） -->
+</main>
+
+<footer>
+  <p>© 2026 Web初心者のための基礎解説</p>
+</footer>
+</body>
+</html>

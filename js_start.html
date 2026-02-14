@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScriptの始め方｜Web初心者のための基礎解説</title>
+  <meta name="description" content="ブラウザで動くJavaScriptの基本、変数・関数・イベントの扱い方、簡単なサンプルで実際に動かす手順を紹介します。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>JavaScriptの始め方：実用的な基本</h1>
+  <nav>
+    <a href="index.html">ホーム</a> |
+    <a href="html_intro.html">HTMLとは</a> |
+    <a href="css_intro.html">CSSの基本</a> |
+    <a href="github_pages.html">GitHub Pagesで公開</a> |
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+</header>
+
+<main>
+  <h2>JavaScriptで何ができるのか？</h2>
+  <p>
+    JavaScriptはWebページに動きを付けるための言語です。フォームの入力チェック、クリックでの表示切替、外部API からのデータ取得など、ユーザー操作に応じてページを変化させることができます。
+  </p>
+
+  <h2>基本の構文（例）</h2>
+  <pre><code>&lt;script&gt;
+const btn = document.getElementById('btn');
+btn.addEventListener('click', () =&gt; {
+  alert('クリックされました');
+});
+&lt;/script&gt;
+</code></pre>
+
+  <h2>簡単な実例：ボタンでテキストを切り替える</h2>
+  <p>以下のHTMLをページに入れて動かしてみてください：</p>
+  <pre><code>&lt;button id="toggle"&gt;切替&lt;/button&gt;
+&lt;p id="text"&gt;表示A&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById('toggle').addEventListener('click', function(){
+  const p = document.getElementById('text');
+  p.textContent = p.textContent === '表示A' ? '表示B' : '表示A';
+});
+&lt;/script&gt;
+</code></pre>
+
+  <h2>イベントとDOMの基礎</h2>
+  <p>
+    - <strong>イベントリスナー</strong>：ユーザーの操作をキャッチして処理を実行。<br>
+    - <strong>DOM操作</strong>：要素の取得（getElementById / querySelector）と内容や属性の変更。<br>
+    - <strong>非同期処理</strong>：fetchで外部データを取得する際に使う（後述のAPI利用）。
+  </p>
+
+  <h2>注意点（初心者が陥りやすい）</h2>
+  <ul>
+    <li>スクリプトはDOMが読み込まれた後で実行する（bodyの最後に置く、またはDOMContentLoadedで待つ）。</li>
+    <li>コンソール（F12）を活用してエラーを確認する習慣をつける。</li>
+    <li>初心者はグローバル変数を多用しがち → スコープを意識する。</li>
+  </ul>
+
+  <h2>まとめと学習の次の一歩</h2>
+  <p>
+    実際に手を動かして、小さな機能（モーダル、画像の切替、簡単な計算機）を作ることが上達の近道です。作った成果は静的サイトにまとめておくと、ポートフォリオにもなります。
+  </p>
+
+  <!-- 記事末に広告を置く場合はここに貼ってください（審査後） -->
+</main>
+
+<footer>
+  <p>© 2026 Web初心者のための基礎解説</p>
+</footer>
+</body>
+</html>

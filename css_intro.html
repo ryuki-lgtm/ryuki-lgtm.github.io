@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>CSSの基本と実践｜Web初心者のための基礎解説</title>
+  <meta name="description" content="CSSでできること、セレクタの使い方、レイアウトの基本（ボックスモデル・フレックス）、よく使うプロパティを実例で解説します。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>CSSの基本と実践：スタイルの付け方</h1>
+  <nav>
+    <a href="index.html">ホーム</a> |
+    <a href="html_intro.html">HTMLとは</a> |
+    <a href="js_start.html">JavaScriptの始め方</a> |
+    <a href="github_pages.html">GitHub Pagesで公開</a> |
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+</header>
+
+<main>
+  <h2>CSSとは何か？</h2>
+  <p>
+    CSS（Cascading Style Sheets）は、HTMLで作った構造に「見た目」を与えるためのルールです。色、余白、フォント、配置などを指定して、ページを見やすく整えます。HTMLは骨組み、CSSは服やデザイン、JavaScriptは動き、というイメージです。
+  </p>
+
+  <h2>基本の書き方（外部スタイルシート）</h2>
+  <p>HTML の &lt;head&gt; に以下のようにリンクします：</p>
+  <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+
+  <h2>よく使うプロパティ</h2>
+  <ul>
+    <li><strong>color / background-color</strong>：文字色と背景色</li>
+    <li><strong>padding / margin</strong>：内側と外側の余白</li>
+    <li><strong>font-size / line-height</strong>：文字の大きさと行間</li>
+    <li><strong>display: block / inline / flex</strong>：表示方法（特にflexはレイアウトで強力）</li>
+  </ul>
+
+  <h2>ボックスモデルの理解</h2>
+  <p>
+    要素は「コンテンツ → padding → border → margin」の順で外側にスペースを持ちます。レイアウトが崩れる場合、まずこのボックスモデルのどこが影響しているかをチェックしましょう。
+  </p>
+
+  <h2>簡単なレイアウト例（フレックス）</h2>
+  <pre><code>.container {
+  display: flex;
+  gap: 16px;
+}
+.item {
+  flex: 1;
+}
+</code></pre>
+
+  <h2>レスポンシブ対応の基礎</h2>
+  <p>
+    - <strong>meta viewport</strong> を入れる。<br>
+    - 幅指定は固定(px)より%やmax-widthを使う。<br>
+    - メディアクエリで画面幅に応じてスタイルを切り替える。
+  </p>
+
+  <h2>よくある失敗と改善</h2>
+  <p>
+    1. クラス名を適当に付けると後で管理が大変 → 命名規則（BEMなど）を検討。<br>
+    2. グローバルなリセットがないとブラウザ差が出る → 最低限のリセットを入れる。<br>
+    3. 画像や長いテキストで崩れる → max-widthやword-breakを指定。
+  </p>
+
+  <!-- 広告を入れる位置（例：本文中） -->
+</main>
+
+<footer>
+  <p>© 2026 Web初心者のための基礎解説</p>
+</footer>
+</body>
+</html>

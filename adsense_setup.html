@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>AdSense審査に通るための設置方法｜Web初心者のための基礎解説</title>
+  <meta name="description" content="AdSense審査で落ちないためのチェックリスト、設置方法、よくある落ちる理由と対処法を初心者向けにまとめています。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>AdSense審査に通るための設置と注意点</h1>
+  <nav>
+    <a href="index.html">ホーム</a> |
+    <a href="html_intro.html">HTMLとは</a> |
+    <a href="css_intro.html">CSSの基本</a> |
+    <a href="js_start.html">JavaScriptの始め方</a> |
+    <a href="github_pages.html">GitHub Pagesで公開</a> |
+    <a href="privacy.html">プライバシーポリシー</a>
+  </nav>
+</header>
+
+<main>
+  <h2>審査前に最低限確認すべき項目（チェックリスト）</h2>
+  <ul>
+    <li>公開済み記事が5本以上ある（各記事1000文字以上が理想）</li>
+    <li>プライバシーポリシーがある</li>
+    <li>お問い合わせページ（メールリンクまたはフォーム）を用意する</li>
+    <li>重複コンテンツやコピペがない</li>
+    <li>サイトナビゲーションが分かりやすい（ヘッダやフッタにリンク）</li>
+  </ul>
+
+  <h2>実際の設置例（審査通過後に貼る）</h2>
+  <p>まず &lt;head&gt; 内に以下を入れます：</p>
+  <pre><code>&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+</code></pre>
+  <p>記事下の例：</p>
+  <pre><code>&lt;!-- 広告 --&gt;
+&lt;ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-xxxxxxxx"
+     data-ad-slot="yyyyyyyy"
+     data-ad-format="auto"
+     data-full-width-responsive="true"&gt;&lt;/ins&gt;
+&lt;script&gt;(adsbygoogle = window.adsbygoogle || []).push({});&lt;/script&gt;
+</code></pre>
+
+  <h2>よくある審査落ち原因と対策</h2>
+  <p>
+    - <strong>記事が薄い</strong>：情報量が不足していると判断される。→ 各記事を具体例や手順、Q&Aなどで肉付けする。<br>
+    - <strong>連絡先がない</strong>：運営が不明だと信頼性に欠ける。→ お問い合わせページを用意する。<br>
+    - <strong>コピー・自動生成の疑い</strong>：オリジナリティが重要。→ 自分の体験や具体的なスクリーンショット（可能なら）を追加。
+  </p>
+
+  <h2>申請後の運用（合格したら）</h2>
+  <ol>
+    <li>広告の配置はユーザー体験を損なわない範囲で行う</li>
+    <li>不適切なコンテンツがないか定期チェック</li>
+    <li>必要ならアフィリエイトを混ぜて収益の分散を図る</li>
+  </ol>
+
+  <h2>最後に一言</h2>
+  <p>
+    AdSenseは内容の質とサイトの信頼性を重視します。ここにある5本の記事は「初心者向けガイド」としてまとまっているため、適切に公開すれば審査通過率は上がります。公開・申請作業をそのまま代行してほしい場合は、公開用のリポジトリ作成からサポートします。
+  </p>
+</main>
+
+<footer>
+  <p>© 2026 Web初心者のための基礎解説</p>
+</footer>
+</body>
+</html>
