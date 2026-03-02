@@ -1,1 +1,0 @@
-# ryuki-lgtm.github.io
